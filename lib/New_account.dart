@@ -1,22 +1,14 @@
 import 'package:flutter/material.dart';
-import 'package:shop_app/New_account.dart';
-import 'Home.dart';
+import 'package:shop_app/main.dart';
 
-void main() {
-  runApp(MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: Login_page(),
-  ));
-}
-
-class Login_page extends StatefulWidget {
-  const Login_page({Key? key}) : super(key: key);
+class New_account extends StatefulWidget {
+  const New_account({Key? key}) : super(key: key);
 
   @override
-  State<Login_page> createState() => _Login_pageState();
+  State<New_account> createState() => _New_accountState();
 }
 
-class _Login_pageState extends State<Login_page> {
+class _New_accountState extends State<New_account> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -28,9 +20,18 @@ class _Login_pageState extends State<Login_page> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 Container(
-                    margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 10),
-                    height: 120,
-                    child: Image.asset('Assets/R.png')),
+                    margin: EdgeInsets.fromLTRB(0.0, 0.0, 0.0, 60),
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(30),
+                        color: Colors.amber),
+                    height: 60,
+                    width: 200,
+                    child: Center(child: Text('Create New Account'))),
+                TextField(
+                  decoration: InputDecoration(
+                    hintText: 'Name',
+                  ),
+                ),
                 TextField(
                   decoration: InputDecoration(
                     hintText: 'Email',
@@ -42,18 +43,15 @@ class _Login_pageState extends State<Login_page> {
                     hintText: 'Password',
                   ),
                 ),
-                SizedBox(
-                  height: 15,
-                ),
-                Text(
-                  'Forgot Password',
-                ),
                 Container(
                   margin: EdgeInsets.fromLTRB(0.0, 15.0, 0.0, 0.0),
                   child: Text(
                     'OR',
                     style: TextStyle(fontWeight: FontWeight.bold),
                   ),
+                ),
+                SizedBox(
+                  height: 25,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.center,
@@ -71,10 +69,13 @@ class _Login_pageState extends State<Login_page> {
                         child: Image.asset('Assets/git.png')),
                   ],
                 ),
+                SizedBox(
+                  height: 25,
+                ),
                 GestureDetector(
                   onTap: () => Navigator.push(
                     context,
-                    MaterialPageRoute(builder: (context) => const Home()),
+                    MaterialPageRoute(builder: (context) => const Login_page()),
                   ),
                   child: Container(
                     margin: EdgeInsets.fromLTRB(0.0, 15.0, 0.0, 12.0),
@@ -82,20 +83,10 @@ class _Login_pageState extends State<Login_page> {
                     height: 40,
                     decoration: BoxDecoration(
                         borderRadius: BorderRadius.circular(20),
-                        color: Colors.blue),
-                    child: Center(child: Text('Sign in')),
+                        color: Color.fromARGB(255, 0, 140, 255)),
+                    child: Center(child: Text('Sign up')),
                   ),
                 ),
-                SizedBox(
-                  height: 15,
-                ),
-                GestureDetector(
-                    onTap: () => Navigator.push(
-                          context,
-                          MaterialPageRoute(
-                              builder: (context) => const New_account()),
-                        ),
-                    child: Text('Create New Account'))
               ],
             ),
           ),

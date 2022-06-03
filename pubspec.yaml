@@ -62,6 +62,9 @@ flutter:
     - Assets/R.png
     - Assets/google.png
     -  Assets/git.png
+    -  Assets/Sale.png
+    -  Assets/amazonsale.jfif
+    -  Assets/mirzapur.jpg
 
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
