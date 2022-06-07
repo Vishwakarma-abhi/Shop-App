@@ -62,11 +62,20 @@ flutter:
     - Assets/R.png
     - Assets/google.png
     -  Assets/git.png
-    -  Assets/Sale.png
     -  Assets/amazonsale.jfif
     -  Assets/mirzapur.jpg
     -  Assets/Logo.png
     -  Assets/Amazon_logo.svg.png
+    - Assets/mobile.jpg
+    - Assets/clothes.jfif
+    - Assets/shoes.jpg
+    - Assets/Washing.jfif
+    - Assets/furn.jpg
+    - Assets/Toys.jfif
+    - Assets/ess.jpeg
+    
+    
+    
     
 
 

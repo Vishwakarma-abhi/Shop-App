@@ -19,21 +19,110 @@ class _HomeState extends State<Home> {
             Container(
               margin: EdgeInsets.fromLTRB(0.0, 0.0, 0, 0),
               height: 90,
+              width: 450,
+              child: Image.asset('Assets/Logo.png'),
               decoration:
                   BoxDecoration(color: Color.fromARGB(198, 109, 240, 238)),
             ),
             Container(
               margin: EdgeInsets.fromLTRB(0.0, 0.0, 0, 0),
               height: 50,
+              width: 450,
+              child: Row(
+                children: [
+                  Container(
+                    margin: EdgeInsets.fromLTRB(15, 10.0, 0.0, 10.0),
+                    width: 350,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.black)),
+                    child: TextField(),
+                  ),
+                  SizedBox(
+                    width: 15,
+                  ),
+                  Icon(Icons.search)
+                ],
+              ),
               decoration:
                   BoxDecoration(color: Color.fromARGB(210, 40, 236, 233)),
             ),
 
             Container(
               height: 70,
+              child: ListView(
+                scrollDirection: Axis.horizontal,
+                children: [
+                  Container(
+                    margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                    width: 45,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.black)),
+                    child: Image.asset('Assets/mobile.jpg'),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                    width: 45,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.black)),
+                    child: Image.asset('Assets/clothes.jfif'),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                    width: 45,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.black)),
+                    child: Image.asset('Assets/shoes.jpg'),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                    width: 45,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.black)),
+                    child: Image.asset('Assets/Washing.jfif'),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                    width: 45,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.black)),
+                    child: Image.asset('Assets/furn.jpg'),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                    width: 45,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.black)),
+                    child: Image.asset('Assets/Toys.jfif'),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                    width: 45,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.black)),
+                    child: Image.asset('Assets/git.png'),
+                  ),
+                  Container(
+                    margin: EdgeInsets.fromLTRB(10.0, 10.0, 10.0, 10.0),
+                    width: 45,
+                    decoration: BoxDecoration(
+                        borderRadius: BorderRadius.circular(10),
+                        border: Border.all(color: Colors.black)),
+                    child: Image.asset('Assets/ess.jpeg'),
+                  ),
+                ],
+              ),
               decoration:
                   BoxDecoration(color: Color.fromARGB(210, 249, 251, 239)),
             ),
+
             Container(
                 decoration: BoxDecoration(
                   border: Border.all(
