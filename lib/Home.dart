@@ -20,7 +20,11 @@ class _HomeState extends State<Home> {
               margin: EdgeInsets.fromLTRB(0.0, 0.0, 0, 0),
               height: 90,
               width: 450,
-              child: Image.asset('Assets/Logo.png'),
+              child: Center(
+                  child: Padding(
+                padding: const EdgeInsets.fromLTRB(0.0, 20.0, 0.0, 0.0),
+                child: Image.asset('Assets/Logo.png'),
+              )),
               decoration:
                   BoxDecoration(color: Color.fromARGB(198, 109, 240, 238)),
             ),
@@ -41,7 +45,7 @@ class _HomeState extends State<Home> {
                   SizedBox(
                     width: 15,
                   ),
-                  Icon(Icons.search)
+                  GestureDetector(child: Icon(Icons.search))
                 ],
               ),
               decoration:
